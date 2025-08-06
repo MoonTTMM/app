@@ -1,9 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>上实东辽</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上实东疗 - 智能健康管理</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+<style>
+    .active {
+        border-radius: 0 22px 22px 22px;
+        background: #0C9F96;
+        color: #FFF;
+    }
+</style>
 <body>
-    <img src="index.jpg" style="max-width: 100%;">
+    <div class="container">
+        <header>
+            <div class="header-nav">
+                <div class="logo">
+                    <img src="./images/header-logo.svg" alt="Logo" style="margin-right: 10px;">
+                    上实东疗
+                </div>
+                 <nav>
+                    <a href="#" class="nav-link" data-background="url(./images/about-background.svg)" data-title="关于我们">关于我们</a>
+                    <a href="#" class="nav-link" data-background="url(./images/feature-background.svg)" data-title="功能介绍">功能介绍</a>
+                    <a href="#" class="nav-link" data-background="url(./images/health-background.svg)" data-title="健康体检">健康体检</a>
+                    <a href="#" class="nav-link" data-background="url(./images/download-background.svg)" data-title="立即下载">立即下载</a>
+                </nav>
+            </div>
+        </header>
+        <div id="background-image">
+            <img src="./images/appoint-background.svg" alt="Background Image" style="width: 100%;"/>
+        </div>
+
+        <footer>
+            <div class="footer-left">
+                <div class="footer-left-item">
+                    <span class="footer-left-title">快速链接</span>
+                    <div class="footer-left-content">
+                        <a href="#" class="footer-link" data-background="url(./images/about-background.svg)" data-title="关于我们">关于我们</a>
+                        <a href="#" class="footer-link" data-background="url(./images/feature-background.svg)" data-title="功能介绍">功能介绍</a>
+                        <a href="#" class="footer-link" data-background="url(./images/health-background.svg)" data-title="健康体检">健康体检</a>
+                        <a href="#" class="footer-link" data-background="url(./images/download-background.svg)" data-title="立即下载">立即下载</a>
+                    </div>
+                </div>
+                <div class="footer-left-item">
+                    <span class="footer-left-title">联系我们</span>
+                    <div class="footer-contract">
+                       <div class="footer-phone">
+                            <img src="./images/phone-icon.png"/>
+                            <span>021-31588888</span>
+                       </div>
+                       <div class="footer-address">
+                            <img src="./images/address-icon.png"/>
+                            <span>上海市崇明区陈家镇东滩大道200号</span>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-qrcode">
+                <img src="./images/qrcode.png"/>
+                <span class="footer-qrcode-tip">扫码下载APP</span>
+            </div>
+        </footer>
+    </div>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const allLinks = document.querySelectorAll('.nav-link, .footer-link');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const backgroundImage = document.getElementById('background-image').querySelector('img');
+
+        // 设置默认背景图片
+        backgroundImage.src = './images/appoint-background.svg';
+
+        allLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                // 移除所有链接的选中样式
+                navLinks.forEach(l => l.classList.remove('active'));
+                // 为当前点击的链接添加选中样式
+                const title = this.getAttribute('data-title');
+                if(this.classList.value.includes('nav-link')) {
+                    this.classList.add('active');
+                } else {
+                    navLinks.forEach(l => {
+                        if(l.getAttribute('data-title') === title){
+                            l.classList.add('active');
+                        }
+                    });
+                }
+                // 更新背景图片
+                const bgImage = this.getAttribute('data-background');
+                backgroundImage.setAttribute('src', bgImage ? bgImage.slice(4, -1) : ''); 
+            });
+        });
+    });
+</script>
+
 </html>

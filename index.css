@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+.container {
+    width: 100%;
+    /* max-width: 1440px; */
+}
+
+header {
+    background: rgb(233, 255, 254);
+}
+.header-nav {
+    color: #132F2F;
+    font-family: "Alibaba PuHuiTi 2.0";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; /* 100% */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 34px 34px 74px;
+}
+.logo img {
+    vertical-align: middle;
+    color: #3D5B58;
+    font-family: "PingFang SC";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+nav {
+    display: flex;
+    gap: 25px;
+}
+.nav-link {
+    padding: 12px 21px;
+    text-decoration: none;
+    color: #132F2F;
+    font-family: "Alibaba PuHuiTi 2.0";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px; 
+}
+
+.nav-link:active {
+    border-radius: 0 22px 22px 22px;
+    background: #0C9F96;
+}
+.active {
+    border-radius: 0 22px 22px 22px;
+    background: #0C9F96;
+}
+
+
+footer {
+    margin-top: 161px;
+    width: 100%;
+    height: 310px;
+    flex-shrink: 0;
+    padding: 19px 77px 37px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(0deg, #F9F9F9 0%, #F9F9F9 100%);
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+}
+.footer-left-item {
+    display: flex;
+    gap: 41px;
+}
+.footer-left-title {
+    color: #132F2F;
+    font-family: "Alibaba PuHuiTi 2.0";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.footer-left-content {
+    display: flex;
+    gap: 43px;
+}
+.footer-link {
+    text-decoration: none;
+    color: rgba(19, 47, 47, 0.69);
+    font-family: "Alibaba PuHuiTi 2.0";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-phone,.footer-address {
+    color: rgba(19, 47, 47, 0.70);
+    font-family: "Alibaba PuHuiTi 2.0";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+} 
+.footer-phone {
+    margin-bottom: 24px;
+}
+
+
+
+.footer-qrcode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-qrcode-tip {
+    margin-top: 10px;
+    color: #132F2F;
+    text-align: center;
+    font-family: "PingFang SC";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
