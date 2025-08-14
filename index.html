@@ -3,100 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>上实东疗 - 智能健康管理</title>
-    <link rel="stylesheet" href="index.css">
+    <title>上实东疗</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
-<style>
-    .active {
-        border-radius: 0 22px 22px 22px;
-        background: #0C9F96;
-        color: #FFF;
-    }
-</style>
 <body>
-    <div class="container">
-        <header>
-            <div class="header-nav">
-                <div class="logo">
-                    <img src="./images/header-logo.svg" alt="Logo" style="margin-right: 10px;">
-                    上实东疗
-                </div>
-                 <nav>
-                    <a href="#" class="nav-link active" data-background="url(./images/appoint-background.jpg)" data-title="首页">首页</a>
-                    <a href="#" class="nav-link" data-background="url(./images/about-background.jpg)" data-title="关于我们">关于我们</a>
-                    <a href="#" class="nav-link" data-background="url(./images/feature-background.jpg)" data-title="功能介绍">功能介绍</a>
-                    <a href="#" class="nav-link" data-background="url(./images/health-background.jpg)" data-title="健康体检">健康体检</a>
-                    <a href="#" class="nav-link" data-background="url(./images/download-background.jpg)" data-title="立即下载">立即下载</a>
-                </nav>
+    <header>
+        <div class="header-nav">
+            <div class="logo">
+                <img src="./images/header-logo.svg" alt="Logo" style="margin-right: 10px;">
+                上实东疗
             </div>
-        </header>
-        <div id="background-image">
-            <img src="./images/appoint-background.jpg" alt="Background Image" style="width: 100%;"/>
+                <nav>
+                <a href="./index.html" class="nav-link active">首页</a>
+                <a href="./about.html" class="nav-link">关于我们</a>
+                <a href="./features.html" class="nav-link">功能介绍</a>
+                <a href="./health-check.html" class="nav-link">健康体检</a>
+                <a href="./download.html" class="nav-link">立即下载</a>
+            </nav>
         </div>
-
-        <footer>
-            <div class="footer-left">
-                <div class="footer-left-item">
-                    <span class="footer-left-title">快速链接</span>
-                    <div class="footer-left-content">
-                        <a href="#" class="footer-link" data-background="url(./images/appoint-background.jpg)" data-title="首页">首页</a>
-                        <a href="#" class="footer-link" data-background="url(./images/about-background.jpg)" data-title="关于我们">关于我们</a>
-                        <a href="#" class="footer-link" data-background="url(./images/feature-background.jpg)" data-title="功能介绍">功能介绍</a>
-                        <a href="#" class="footer-link" data-background="url(./images/health-background.jpg)" data-title="健康体检">健康体检</a>
-                        <a href="#" class="footer-link" data-background="url(./images/download-background.jpg)" data-title="立即下载">立即下载</a>
+    </header>
+    <div class="content">
+        <!-- 上面部分 -->
+        <div class="web-introduction">
+            <div class="introduction-content">
+                <div class="introduction-title">从预约到调养</div>
+                <div class="introduction-title introduction-title-highlight">全程智能守护</div>
+                <div class="introduction-description">上实东疗APP为您提供一站式体检服务，从预约、导检到报告解读，再到个性化健康管理方案，让健康管理变得简单高效。</div>
+            </div>
+            <img src="./images/phone-home.png"/>
+        </div>
+        <!-- 中间部分 -->
+        <div class="section">
+            <div class="section-title">智能健康管理，全方位呵护您的健康</div>
+            <div class="section-subtitle">上实东疗APP集成了六大核心功能，从体检预约到健康管理，为您提供一站式服务</div>
+            <div class="section-content">
+                <div class="feature">
+                    <img class="feature-icon" src="./images/list-icon1.svg"/>
+                    <div class="feature-title">智能预约系统</div>
+                    <div class="feature-description">
+                        支持根据健康评估，智能推荐适合您的套餐，支持30天内预约与接送服务预约。
                     </div>
                 </div>
-                <div class="footer-left-item">
-                    <span class="footer-left-title">联系我们</span>
-                    <div class="footer-contract">
-                       <div class="footer-phone">
-                            <img src="./images/phone-icon.png"/>
-                            <span>021-31588888</span>
-                       </div>
-                       <div class="footer-address">
-                            <img src="./images/address-icon.png"/>
-                            <span>上海市崇明区陈家镇东滩大道200号</span>
-                       </div>
+                <div class="feature">
+                    <img class="feature-icon" src="./images/list-icon1.svg"/>
+                    <div class="feature-title">AR实景导检</div>
+                    <div class="feature-description">
+                        通过3D建模展示体检中心动线，引导您完成体检流程，实时推送当前候诊时间，减少排队等待。
+                    </div>
+                </div>
+                <div class="feature">
+                    <img class="feature-icon" src="./images/list-icon1.svg"/>
+                    <div class="feature-title">AI报告解读</div>
+                    <div class="feature-description">
+                        自动分析体检报告，标注异常指标，关联医学知识库生成三级建议，支持历史数据对比，生成健康趋势图谱。
+                    </div>
+                </div>
+                <div class="feature">
+                    <img class="feature-icon" src="./images/list-icon1.svg"/>
+                    <div class="feature-title">健康管理计划</div>
+                    <div class="feature-description">
+                        基于体检结果生成个性化健康管理方案，包括饮食建议、运动计划和生活习惯调整，智能提醒用药和复查时间。
+                    </div>
+                </div>
+                <div class="feature">
+                    <img class="feature-icon" src="./images/list-icon1.svg"/>
+                    <div class="feature-title">疗休养推荐</div>
+                    <div class="feature-description">
+                        基于用户健康数据智能匹配疗休养套餐，包含交通、住宿、医疗监测的一体化方案，追踪记录健康改善情况。
+                    </div>
+                </div>
+                <div class="feature">
+                    <img class="feature-icon" src="./images/list-icon1.svg"/>
+                    <div class="feature-title">AI智能问答</div>
+                    <div class="feature-description">
+                        24 小时在线的私人健康顾问，更能结合您的体检数据与健康档案，提供个性化解答，让健康咨询高效又贴心。
                     </div>
                 </div>
             </div>
-            <div class="footer-qrcode">
-                <img src="./images/qrcode.png"/>
-                <span class="footer-qrcode-tip">扫码下载APP</span>
+        </div>
+        <!-- 下面部分 -->
+        <div class="section">
+            <div class="section-title">简单三步，开启智能健康管理</div>
+            <div class="section-subtitle">上实东疗APP简化了传统体检流程，让健康管理变得轻松便捷</div>
+            <div class="step-content">
+                <div class="step-item">
+                    <img src="./images/phone-appoint.png"/>
+                    <div class="step-description">
+                        <div class="step-description-explain">
+                            <img src="./images/step-icon1.png"/>
+                            <span class="step-title">在线预约体检</span>
+                        </div>
+                        <div class="step-text">可通过多维度筛选快速锁定心仪选项，套餐选择更具个性化。系统会结合您的年龄、性别、既往健康状况智能推荐合适套餐，从基础体检到深度专项检查一应俱全，每个套餐都附带详细项目说明与费用明细。</div>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-description">
+                        <div class="step-description-explain">
+                            <img src="./images/step-icon1.png"/>
+                            <span class="step-title">智能导检体检</span>
+                        </div>
+                        <div class="step-text">检中体验再升级：AR 实景导航基于体检中心 3D 建模，实时指引下一项目位置；智能排队系统动态推送候诊进度，预估等待时间精确到分钟；体检数据与设备直连，完成一项自动同步至 APP，实时更新已检项目，避免遗漏更省心。</div>
+                    </div>
+                    <img src="./images/phone-room.png"/>
+                </div>
+                <div class="step-item">
+                    <img src="./images/phone-detail.png"/>
+                    <div class="step-description">
+                        <div class="step-description-explain">
+                            <img src="./images/step-icon1.png"/>
+                            <span class="step-title">健康管理追踪</span>
+                        </div>
+                        <div class="step-text">AI 深度解读体检报告，通过医学知识库比对，对异常指标进行三级预警标注，用通俗语言拆解专业术语；依据报告自动生成个性化健康计划，涵盖饮食禁忌、运动方案及作息建议；实时同步日常健康数据，生成动态趋势图谱；智能推算复查周期，提前 7 天推送提醒，让健康管理更精准。</div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
     </div>
+    <footer>
+        <div class="footer-left">
+            <div class="footer-left-item">
+                <span class="footer-left-title">快速链接</span>
+                <div class="footer-left-content">
+                    <a href="./index.html" class="footer-link">首页</a>
+                    <a href="./about.html" class="footer-link">关于我们</a>
+                    <a href="./features.html" class="footer-link">功能介绍</a>
+                    <a href="./health-check.html" class="footer-link">健康体检</a>
+                    <a href="./download.html" class="footer-link">立即下载</a>
+                </div>
+            </div>
+            <div class="footer-left-item">
+                <span class="footer-left-title">联系我们</span>
+                <div class="footer-contract">
+                    <div class="footer-phone">
+                        <img src="./images/phone-icon.png"/>
+                        <span>021-31588888</span>
+                    </div>
+                    <div class="footer-address">
+                        <img src="./images/address-icon.png"/>
+                        <span>上海市崇明区陈家镇东滩大道200号</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-qrcode">
+            <img src="./images/qrcode.png"/>
+            <span class="footer-qrcode-tip">扫码下载APP</span>
+        </div>
+    </footer>
 </body>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const allLinks = document.querySelectorAll('.nav-link, .footer-link');
-        const navLinks = document.querySelectorAll('.nav-link');
-        const backgroundImage = document.getElementById('background-image').querySelector('img');
-
-        // 设置默认背景图片
-        backgroundImage.src = './images/appoint-background.jpg';
-
-        allLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                // 移除所有链接的选中样式
-                navLinks.forEach(l => l.classList.remove('active'));
-                // 为当前点击的链接添加选中样式
-                const title = this.getAttribute('data-title');
-                if(this.classList.value.includes('nav-link')) {
-                    this.classList.add('active');
-                } else {
-                    navLinks.forEach(l => {
-                        if(l.getAttribute('data-title') === title){
-                            l.classList.add('active');
-                        }
-                    });
-                }
-                // 更新背景图片
-                const bgImage = this.getAttribute('data-background');
-                backgroundImage.setAttribute('src', bgImage ? bgImage.slice(4, -1) : ''); 
-            });
-        });
-    });
+    
 </script>
-
 </html>

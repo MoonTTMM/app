@@ -1,0 +1,64 @@
+.content {
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+.web-introduction {
+    width: 100%;
+    height: 367px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    padding-left: 110px;
+    padding-bottom: 90px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #2A656A -31.74%, #3EBFBF 100%);
+    color: #FFF;
+    font-family: "Alibaba PuHuiTi 2.0";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 100%;
+}
+.web-introduction-img {
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.section {
+    width: 100%;
+}
+.step-content {
+    width: 100%;
+    padding:  100px 0;
+}
+.step-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+    margin-bottom: 140px;
+}
+.step-description {
+    width: 40%;
+
+}
+.step-title {
+    color: #0C9F96;
+    font-family: "Alibaba PuHuiTi 2.0";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+.step-text {
+    margin-top: 37px;
+    color: #3B5B59;
+    font-family: "Alibaba PuHuiTi 2.0";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 145.455% */
+}
